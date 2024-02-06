@@ -1,10 +1,3 @@
-A simple page scroll progress component made with React.
-
-## Getting Started
-
-Create a new file called `ScrollProgress.tsx` then copy and paste the component below into the file.
-
-```jsx
 import { useState, useEffect } from 'react';
 
 interface ScrollProgressProps {
@@ -69,25 +62,5 @@ export default function ScrollProgress(props: ScrollProgressProps) {
     </div>
   )
 }
-```
 
-Add the `ScrollProgress` component to the page you'd like the scroll progress bar to appear.
 
-```jsx
-import ScrollProgress from "./components/scroll-progress";
-
-const App = () => {
-  return (
-    <div>
-      <ScrollProgress 
-        position="top" 
-        height={6}
-        gradient={{
-          start: "green",
-          end: "blue"
-        }}
-      />
-    </div>
-  );
-};
-```
